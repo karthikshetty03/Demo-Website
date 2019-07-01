@@ -1,0 +1,78 @@
+html
+{text-align:center; 
+	
+padding:10px; 
+background: url("night.jpg") no-repeat center;
+background-size: cover;
+}
+
+.d{  text-align: center;
+	font-size: 45px;
+	color:goldenrod;
+	font-family: verdana;
+
+}
+div.write
+{
+	font-size: 25px;
+  font-family: cursive;
+  font-weight: bold;
+  padding:5px;
+  text-align: center; 
+}
+p,#form1,span{
+  color: white;
+  padding:10px;
+  text-align: center; 
+
+}
+label{font-family: cursive;
+	display: block;
+padding:10px;
+}
+.q ,#abc
+{	color:goldenrod;
+font-size: 25px;
+	text-align: center;
+}
+
+
+a
+{
+    text-decoration: none;
+	font-size: 25px;
+	color: white;
+	
+	padding: 15px;
+
+}
+a:hover
+{
+	color:red;
+	text-decoration: underline;*/
+
+
+/* specific boxes 
+
+#wrapper header, #wrapper footer {
+  background-color: blue;
+  color: white;
+}
+
+#wrapper main {
+  background-color: yellow;
+}
+
+*/0041240439
+
+#query{
+	text-align:center;
+	}
+	input:invalid {
+  border: 2px dashed red;
+}
+
+input:valid {
+  border: 2px solid black;
+}
+}

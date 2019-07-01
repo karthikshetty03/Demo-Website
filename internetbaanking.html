@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<p class="Q">
+WELCOME TO NET BANKING	
+
+
+</p>
+
+
+<form>
+<label> &emsp; &emsp; USERNAME : <input type="text" name="usertname"></label><label> &emsp;&ensp; &emsp;PASSWORD :
+<input type="password" name="password"></label>
+<p id="random"></p>
+
+<p class="d">&ensp;ENTER CAPTCHA : 
+<input  name="captcha" value="" id="cap" >&emsp;<button id="refresh">REFRESH</button></p><br>
+<p id="message" class="Q"></p>
+<p  id="log"><button id="log1" href="hq.html" >LOGIN</button></p>
+
+</form>
+
+
+
+</form>
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+#message
+{
+	display:inline-block;
+}
+html{margin: 0;
+}
+
+label
+{
+display: block;
+padding: 20px;
+}
+body{
+
+
+background-image: url('abfin.png');
+background-repeat: no-repeat;
+background-size: 1550px 755px;
+background-color: white;
+}
+.Q
+{
+padding-top: 10px;
+font-size: 30px;
+font-family: arial black;
+}
+.b
+{
+	padding: 10px;
+	font-size: 20px;
+	color:black;
+	font-variant: bold;
+	
+
+
+}	
+#random
+{
+	color:black;
+	letter-spacing: 10px;
+	font-size: 35px;
+	padding-left: 180px;
+	padding-bottom: 0;
+	
+    font-family: Vineta BT;
+}
+
+#log{
+	padding-left: 200px;
+}
+.d
+{
+	padding-top:0;
+}
+</style>
+
+<script type="text/javascript">
+	let cap1=document.getElementById('cap');
+let login=document.getElementById('log1');
+
+let res,myVar;
+let message=document.getElementById('message');
+let random=document.getElementById('random');
+let refresh=document.getElementById('refresh');
+
+
+
+document.addEventListener("DOMContentLoaded",function(){
+	res=ref();
+});
+refresh.addEventListener('click',function(){
+	res=ref();
+});
+function ref(){
+
+   result = Math.floor(Math.random() *899) + 100;
+   
+random.textContent=result;
+return result;
+
+}
+
+login.addEventListener('click',function(event){
+
+choice=cap.value;
+//let res1=res.toString(10);
+if(res!=choice)
+{
+res=ref();
+//res1=res.toString(10);
+message.textContent='INVALID CAPTCHA! PLEASE TRY AGAIN.' ;
+
+message.style.backgroundColor="white";
+message.style.color="black";
+event.preventDefault();
+}
+else
+{message.textContent=" ";
+	message.style.backgroundColor="transparent";
+	
+	window.location='httphi.html';
+
+}
+
+
+
+});
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

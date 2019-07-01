@@ -1,0 +1,234 @@
+.wrapper
+ {
+  position: sticky;
+  top:30px ;
+  left: 30px;
+  font-size: 50px;
+}
+
+html{
+
+padding: 30px;
+text-align: center;
+background :linear-gradient(to bottom, rgba(255,0,255,1),rgba(0,0,255,0.8), rgba(255,0,255,1));
+background-clip: content-box;
+border: 15px solid black;
+  border-image-source: url(border1.png);
+  border-image-slice: 250;
+  border-image-repeat: round;
+}
+body
+{
+
+	 background-image: url(left.png), url(right.png) ;
+	 background-repeat: no-repeat,no-repeat;
+	 background-position: 0% 10.5%,100% 10.5%;
+	 background-size: 250px, 250px;
+}
+a,#qwerty
+{text-decoration: none;
+	display: inline-block;
+	color: rgba(0,0,0);
+	font-size: 25px;
+	padding: 5px;
+	
+	font-family: cursive;
+	margin-top: 5px;
+}
+a[href*="hq"] {
+  background: url('https://mdn.mozillademos.org/files/12982/external-link-52.png') no-repeat 100% 0;
+  background-size: 16px 16px;
+  padding-top:15px;
+  padding-right: 2px; 
+  
+}
+a:hover
+{
+	color:white;
+	text-decoration: underline;
+	
+
+}
+
+
+
+
+
+
+table,th,tr,td
+{align-self: center;
+background: linear-gradient(to bottom, rgba(0,0,0,0.75), rgba(0,0,0,0));
+	color: white;
+	font-size: 25px;
+	border: 1px solid white;
+  border-collapse: collapse;
+text-align: center;
+margin: 10px 10px 10px 10px;
+padding: 10px 10px 10px 10px;
+
+}
+#save
+{font-weight: bolder;
+	
+	
+	background-color: black;
+	font-size: 35px;
+	border: 1px solid white ;
+  border-collapse: collapse;
+text-align: center;
+padding: 50px;
+}
+tbody tr:nth-child(1)
+{
+	background:aqua;
+}
+
+tbody tr:nth-child(2),tr:nth-child(3),tr:nth-child(4) {
+  background:goldenrod;
+}
+
+
+
+
+p {
+  padding: 30px;
+color :lime;}
+
+/* General styles */
+/*body {
+  margin: 0;
+}
+
+#wrapper * {
+  padding: 20px;
+  font-size: 20px;
+  border: 20px solid rgba(0,0,0,0.5);
+}
+
+/* specific boxes 
+
+#wrapper header, #wrapper footer {
+  background-color: blue;
+  color: white;
+}
+
+#wrapper main {
+  background-color: yellow;
+}
+
+#wrapper header {
+
+}
+*/
+footer { padding:25px;
+
+}
+.autoscroll
+{text-align : center;
+	font-size: 25px;
+	color:black;
+	
+	margin: 10px;
+	
+	font-family: cursive;
+
+	overflow: auto;
+
+  width  : 400px;
+  height : 2.5em;
+  padding: 1em 1em 1em 1em;
+  border : 5px solid black;
+}
+
+.s
+{font-weight: bold;
+	text-decoration: line-through;
+}
+figcaption
+{font-family: arial;
+	font-weight: bold;
+	font-size: 25px;
+	color:rgba(255,0,0,0.75);
+	padding-top: 5px;
+	text-shadow: -1px -1px 1px #aaa,
+             0px 4px 1px rgba(0,0,0,0.5),
+             4px 4px 5px rgba(0,0,0,0.7),
+             0px 0px 7px rgba(0,0,0,0.4);
+
+
+} #size2 {  font-size:  55px; color: black; font-family: vineta BT;
+
+	
+
+}
+#size1
+{font-weight: bold;
+color : rgba(100,0,50,1); 
+	font-size: 40px;
+	font-family: cursive;
+	font-style: italic;
+}
+img.newoffer1
+{
+	padding-top: 1px;
+	padding-bottom: 4px;
+	
+	padding-right: 1px;
+}
+img.newoffer2
+{
+	padding-top: 1px;
+	padding-bottom: 4px;
+	
+	padding-right: 70px;
+}
+img.newoffer3
+{
+	padding-top: 1px;
+	padding-bottom: 4px;
+	
+	padding-right: 45px;
+}
+
+
+
+
+
+ul {
+  padding: 0;
+  width: 100%;
+}
+
+li {
+  display: inline;
+}
+
+a[href*="http"] {
+  outline: none;
+  text-decoration: none;
+  display: inline-block;
+  width: 19.5%;
+  margin-right: 0.625%;
+  text-align: center;
+  line-height: 3;
+  color: white;
+  font-family: arial;
+}
+
+li:last-child a[href*="http"] {
+  margin-right: 0;
+}
+
+a[href*="http"]:link, a[href*="http"]:visited, a[href*="http"]:focus {
+  background-color: black;
+}
+
+a[href*="http"]:hover {     
+  background: orange;
+}
+
+a[href*="http"]:active {
+  background: red;
+  color: white;
+}
+

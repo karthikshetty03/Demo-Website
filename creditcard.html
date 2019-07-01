@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>card payment</title>
+</head>
+<body>
+	<marquee scrollamount="15" >PLEASE DO NOT REFRESH OR GO BACK TO THE PREVIOUS PAGE.</marquee>
+	<span>
+<form  id="form1"><div>
+<input type="radio" name="PAY" >CREDIT CARD<span></span>
+<input type="radio" name="PAY" >DEBIT CARD </div>
+<p><select>
+	<option>CARD TYPE</option>
+	<option>VISA</option>
+	<option>MASTER CARDS</option>
+	<option>RUPAY</option>
+</select></p>
+
+<p><input name="card no." placeholder="CARD NUMBER"></p>
+<p><input  name="card name" placeholder="NAME ON CARD"></p>
+<p><input name="expdate" placeholder="CARD VALID TILL"></p>
+<p><input type="password" name="cvv" placeholder="CVV NO."></p>
+<p><input type="checkbox"  name="spamlogin"><b>I AM NOT A ROBOT</b></p>
+<p><button>MAKE PAYMENT</button></p>
+</form>
+
+<form action="hq.html" id="form2"><input name="OTP" type="password" placeholder="ENTER OTP">
+ <input type="submit"> 
+ </form>
+<style type="text/css">
+html
+{
+background:url('cred.jpg');
+background-repeat: no-repeat;
+background-size:cover;
+margin: 0;
+
+}
+span
+{
+text-align: center;
+padding: 50px;
+
+}
+p
+{
+	padding: 20px;
+}
+
+marquee
+{word-spacing: 8px;
+	color:white;
+	background-color: goldenrod;
+	font-size: 25px;
+	font-family: arial;
+}
+
+
+</style>
+
+<script type="text/javascript">
+let div=document.querySelector('div');
+const form2=document.querySelector('#form2');
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+form2.style.display="none";
+div.style.backgroundColor="black";
+div.style.color="white";
+div.style.padding="20px";
+});
+
+
+let body=document.querySelector('body');
+const form1=document.querySelector('#form1');
+let marquee=document.querySelector('marquee');
+let button=document.querySelector('button');
+
+
+
+button.addEventListener('click',function(){
+function alertFunc() {
+
+  alert("SESSION TIMEOUT. PLEASE TRY AGAIN");
+  
+  window.location='creditcard.html';
+}
+var myVar;
+
+function myFunction() {
+  myVar = setInterval(alertFunc, 3000);
+}
+
+
+myFunction();
+form1.parentNode.removeChild(form1);
+marquee.parentNode.removeChild(marquee);
+document.body.appendChild(marquee);
+marquee.style.backgroundColor="black";
+marquee.textContent='PLEASE DO NOT SHARE THE OTP WITH ANYONE. BANK NEVER CALLS FOR OTP VERIFICATION';
+form2.style.display="block";
+
+
+});
+
+
+
+</script>	
+
+
+
+
+</body>
+</html>
