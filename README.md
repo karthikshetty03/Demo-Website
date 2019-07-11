@@ -2,4 +2,4 @@
 
 a mock website for registration and fees payment for the course
 
-[HERE YOU GO](httphi.html)
+[HERE YOU GO](karthikshetty03.github.iol)
