@@ -2,5 +2,5 @@
 
 a mock website for registration and fees payment for the course
 
-[Here you go...](httphi.html)
+go to karthikshetty03.github.io to see the website
 
